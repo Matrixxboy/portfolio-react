@@ -2,13 +2,19 @@ import { useState } from 'react'
 // import ReactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import Main from './components/Main'
+import Header from './components/partials/Navbar'
+import Footer from './components/partials/Footer'
 // import './App.css'
 
 function App() {
+  console.log("App loaded")
   return (
     <>
-      <h1>Hello bro</h1>
+      <Header />  
       <Main />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

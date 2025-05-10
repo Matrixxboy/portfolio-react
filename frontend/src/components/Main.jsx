@@ -9,7 +9,7 @@ const Main = ()=>{
     return(
         <>
         <h1>Hellow</h1>
-            <div class="text-color-secondary">
+            <div className="text-color-secondary">
                 <Landingpage />
                 <Aboutme />
                 <Cards />
