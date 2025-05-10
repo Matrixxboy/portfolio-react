@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Aboutme from "./pages/homepage/Aboutme";
 import Landingpage from "./pages/homepage/Landingpage";
@@ -7,11 +7,16 @@ import Certificate from "./pages/homepage/Certificates";
 
 const Main = ()=>{
     return(
-        <div class="text-color-secondary">
-            <Landingpage />
-            <Aboutme />
-            <Cards />
-            <Certificate />
-        </div>
+        <>
+        <h1>Hellow</h1>
+            <div class="text-color-secondary">
+                <Landingpage />
+                <Aboutme />
+                <Cards />
+                <Certificate />
+            </div>
+        </>
     );
 }
+
+export default Main;

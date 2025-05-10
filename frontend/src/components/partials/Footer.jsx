@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer =()=>{
@@ -135,25 +135,25 @@ const Footer =()=>{
     {/* <!-- Footer Bottom --> */}
     <div class=" text-gray-400 text-sm  pt-4">
   {/* <!-- Divider --> */}
-  <div class="border-t border-gray-700 pt-6">
+    <div class="border-t border-gray-700 pt-6">
     {/* <!-- Legal & Policy Links --> */}
     <div class="flex flex-wrap justify-center gap-6 mb-4">
-      <a href="./footerpages/PrivacyPolicy.jsx" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
-      <span class="hidden sm:inline">|</span>
-      <a href="./footerpages/TermsAndConditions.jsx" class="hover:text-white transition-colors duration-200">Terms of Service</a>
-      <span class="hidden sm:inline">|</span>
-      <a href="./footerpages/CookiePolicy.jsx" class="hover:text-white transition-colors duration-200">Cookie Policy</a>
-      <span class="hidden sm:inline">|</span>
-      <a href="./footerpages/DNSMD.jsx" class="hover:text-white transition-colors duration-200">Do Not Sell My Data</a>
-      <span class="hidden sm:inline">|</span>
-      <a href="./footerpages/GDPRI_info.jsx" class="hover:text-white transition-colors duration-200">GDPR Information</a>
+        <a href="./footerpages/PrivacyPolicy.jsx" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+        <span class="hidden sm:inline">|</span>
+        <a href="./footerpages/TermsAndConditions.jsx" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+        <span class="hidden sm:inline">|</span>
+        <a href="./footerpages/CookiePolicy.jsx" class="hover:text-white transition-colors duration-200">Cookie Policy</a>
+        <span class="hidden sm:inline">|</span>
+        <a href="./footerpages/DNSMD.jsx" class="hover:text-white transition-colors duration-200">Do Not Sell My Data</a>
+        <span class="hidden sm:inline">|</span>
+        <a href="./footerpages/GDPRI_info.jsx" class="hover:text-white transition-colors duration-200">GDPR Information</a>
     </div>
 
     {/* <!-- Copyright --> */}
     <div class="text-center text-gray-500">
-      &copy; 2025 <span class="text-white font-medium">The Matrix World</span>. All rights reserved.
+        &copy; 2025 <span class="text-white font-medium">The Matrix World</span>. All rights reserved.
     </div>
-  </div>
+    </div>
 </div>
 
 </div>
