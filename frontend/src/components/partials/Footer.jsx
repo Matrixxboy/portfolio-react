@@ -12,10 +12,10 @@ const Footer =()=>{
             <p class="text-lg text-gray-300 mt-1">Grow · Learn · Succeed</p>
             <ul class="mt-4 space-y-2 text-sm flex flex-col lg:items-start items-center">
                 <li><a href="/" class="hover:underline text-purple-200">Home</a></li>
-                <li><a href="/about" class="hover:underline text-purple-200">About Me</a></li>
-                <li><a href="/Projects" class="hover:underline text-purple-200">Projects</a></li>
-                <li><a href="/Certificates" class="hover:underline text-purple-200">Certificates</a></li>
-                <li><a href="/Blogs" class="hover:underline text-purple-200">Blogs</a></li>
+                <li><a href="../pages/aboutpage/Aboutpage.jsx" class="hover:underline text-purple-200">About Me</a></li>
+                <li><a href="../pages/projectpage/Projects.jsx" class="hover:underline text-purple-200">Projects</a></li>
+                <li><a href="../pages/certificatepage/Certificatepage.jsx" class="hover:underline text-purple-200">Certificates</a></li>
+                <li><a href="../pages/blogpage/Blog.jsx" class="hover:underline text-purple-200">Blogs</a></li>
             </ul>
         </div>
 
