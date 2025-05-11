@@ -25,4 +25,10 @@
     color: #BBAED0;
 }
 
+  canvas.particle-bg {
+  z-index: -1 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 }

@@ -5,18 +5,16 @@ import Landingpage from "./pages/homepage/Landingpage";
 import Cards from "./pages/homepage/Cards";
 import Certificate from "./pages/homepage/Certificates";
 
-const Main = ()=>{
-    return(
+const MainPage = () => {
+    return (
         <>
-        <h1>Hellow</h1>
-            <div className="text-color-secondary">
-                <Landingpage />
-                <Aboutme />
-                <Cards />
-                <Certificate />
-            </div>
+        
+            <Landingpage />
+            <Aboutme />
+            <Cards />
+            <Certificate />
         </>
     );
-}
+};
 
-export default Main;
+export default MainPage;
