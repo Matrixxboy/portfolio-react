@@ -1,0 +1,243 @@
+/* Base styles (applied to all screen sizes) */
+.container {
+  max-width: 1200px; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glass-white {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px); /* Add blur effect if desired */
+}
+
+.text-color-primary {
+  color: #6C63FF; /* Example primary color */
+}
+
+.text-gray-300 {
+  color: #A0AEC0; /* Example gray color */
+}
+
+/* Small screens (up to md breakpoint) */
+@media (max-width: 767px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 24px;
+  }
+
+  .md\:px-10 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .md\:py-12 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 1.5rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+  }
+
+  .relative div:first-child {
+    bottom: auto !important; /* Override inline style */
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .relative div:nth-child(2) {
+    bottom: auto !important; /* Override inline style */
+    top: 16px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .md\:h-64 {
+    height: auto; /* Allow natural height */
+  }
+}
+
+/* Medium screens (from md breakpoint, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Two column layout */
+    gap: 32px;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 2; /* Photo takes full width */
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 2; /* Text takes full width */
+  }
+
+  .md\:px-10 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .md\:py-12 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .text-2xl {
+    font-size: 1.75rem;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 2.25rem;
+  }
+
+  .text-sm {
+    font-size: 0.9rem;
+  }
+
+  .md\:text-base {
+    font-size: 1.05rem;
+  }
+
+  .grid-rows-\[auto_1fr_auto\] {
+    grid-template-rows: auto 1fr auto;
+    gap: 8px;
+  }
+
+  .relative div:first-child {
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .relative div:nth-child(2) {
+    bottom: 32px;
+    left: 32px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .md\:h-64 {
+    height: 400px; /* Adjust as needed for medium screens */
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: 1fr; /* Stack on medium screens */
+  }
+
+  .lg\:col-span-2 {
+    grid-column: 1;
+  }
+}
+
+/* Large screens (from lg breakpoint, 1024px and up) */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 48px;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7;
+  }
+
+  .md\:px-10 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .md\:py-12 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .text-2xl {
+    font-size: 1.75rem;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 2.25rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 3rem;
+  }
+
+  .text-sm {
+    font-size: 0.9rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+  }
+
+  .grid-rows-\[auto_1fr_auto\] {
+    grid-template-rows: auto 1fr auto;
+    gap: 12px;
+  }
+
+  .relative div:first-child {
+    bottom: 0;
+    left: 0;
+    width: 96px;
+    height: 96px;
+  }
+
+  .relative div:nth-child(2) {
+    bottom: 48px;
+    left: 48px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+}
+
+/* Extra large screens (from xl breakpoint, 1280px and up) */
+@media (min-width: 1280px) {
+  .text-2xl {
+    font-size: 1.875rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 2.5rem;
+  }
+}
