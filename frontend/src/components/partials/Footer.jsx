@@ -123,9 +123,9 @@ const Footer =()=>{
 
                 {/* Arrow and Text  */}
                 <div className="flex items-center mt-4 sm:mt-0 sm:ml-4 text-sm text-purple-300 space-x-2 text-center sm:text-left">
-                    <a href="/contactme" className="mx-auto px-6 py-2 text-lg font-semibold text-purple-100 bg-white/10 rounded-md backdrop-blur-md transition duration-300 hover:bg-purple-400/10 hover:shadow-[0_0_12px_2px_rgba(168,85,247,0.4)] animate-pulse hover:animate-none">
+                    <Link to="/Contactform" className="mx-auto px-6 py-2 text-lg font-semibold text-purple-100 bg-white/10 rounded-md backdrop-blur-md transition duration-300 hover:bg-purple-400/10 hover:shadow-[0_0_12px_2px_rgba(168,85,247,0.4)] animate-pulse hover:animate-none">
                         Contact Now
-                    </a>
+                    </Link>
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7 7-7M3 12h18" />
                     </svg>

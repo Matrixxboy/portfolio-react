@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { initParticleBackground } from './utils/particalbackground';
+// import { initParticleBackground } from './utils/particalbackground';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
@@ -14,25 +14,25 @@ import AboutPage from './components/pages/aboutpage/AboutPage.jsx';
 import Projects from './components/pages/projectpage/Projects';
 import CertificatePage from './components/pages/certificatepage/CertificatePage';
 import Blog from './components/pages/blogpage/Blog';
+import ContactForm from './components/pages/conatactform/Contactform'
 
 function App() {
-  useEffect(() => {
-    initParticleBackground();
-  }, []);
+  // useEffect(() => {
+  //   initParticleBackground();
+  // }, []);
 
   return (
     <>
-      <div className='relative bg-color-primary overflow-x-hidden text-color-secondary'>
+      <div className=' bg-color-primary overflow-x-hidden text-color-secondary'>
+          <Header />
         {/* Background SVG Layer */}
-        <div className="fixed content-center justify-items-center bottom-0 left-0 z-0 w-full h-full opacity-1 pointer-events-none">
-          <img src={MatrixBg} alt="Background SVG" className="w-170 object-contain filter invert" />
+        <div className="fixed content-center justify-items-center bottom-0 left-0 z-0 w-full h-full opacity-2.5 pointer-events-none">
+          <img src={MatrixBg} alt="Background SVG" className="w-160 object-contain filter invert" />
         </div>
 
         {/* Main Content Layer */}
         <div className="relative z-10">
-          <div className='sticky'>
-            <Header />
-          </div>
+          
 
           <div className="container mx-auto p-4">
             <Routes>
@@ -41,6 +41,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/certificates" element={<CertificatePage />} />
               <Route path="/blogs" element={<Blog />} />
+              <Route path="/contactme" element={<ContactForm />}/>
               {/* Optional: Add a 404 route */}
               {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>

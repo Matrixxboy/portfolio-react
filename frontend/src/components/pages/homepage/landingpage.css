@@ -10,9 +10,17 @@
   animation: typing 5s steps(40, end) 1s forwards, blink-caret 0.75s step-end infinite;
 }
 
+.hiremebtn{
+  color : #8200db;
+}
+
+.hiremebtn:hover{
+  color :white;
+}
+
 @media (min-width: 300px) {
   h1 {
-    font-size: 1.2rem; /* Adjust font size for small devices */
+    font-size: 1.1rem; /* Adjust font size for small devices */
   }
 }
 @media (min-width: 400px) {

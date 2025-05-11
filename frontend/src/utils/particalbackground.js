@@ -1,31 +1,29 @@
 export function initParticleBackground() {
-    console.log("🎉 Particle background initialized");
-  document.addEventListener("DOMContentLoaded", () => {
-    document.addEventListener("DOMContentLoaded", () => {
-    const canvas = document.createElement('canvas');
-    canvas.classList.add('particle-bg');
-    document.body.appendChild(canvas);
+  console.log("🎉 Particle background initialized");
+  
+  const canvas = document.createElement('canvas');
+  canvas.classList.add('particle-bg');
+  document.body.appendChild(canvas);
 
-    const ctx = canvas.getContext('2d');
+  const ctx = canvas.getContext('2d');
+  const DPR = Math.min(window.devicePixelRatio, 1.5);
 
-    // Limit device pixel ratio for better mobile performance
-    const DPR = Math.min(window.devicePixelRatio, 1.5);
+  function setCanvasSize() {
+    canvas.width = window.innerWidth * DPR;
+    canvas.height = window.innerHeight * DPR;
 
-    function setCanvasSize() {
-        canvas.width = window.innerWidth * DPR;
-        canvas.height = window.innerHeight * DPR;
+    canvas.style.width = `${window.innerWidth}px`;
+    canvas.style.height = `${window.innerHeight}px`;
+    canvas.style.position = "fixed";
+    canvas.style.top = 0;
+    canvas.style.left = 0;
+    canvas.style.zIndex = "-1";
+    canvas.style.pointerEvents = "none";
+  }
 
-        canvas.style.width = `${window.innerWidth}px`;
-        canvas.style.height = `${window.innerHeight}px`;
-
-        canvas.style.position = "fixed";
-        canvas.style.top = 0;
-        canvas.style.left = 0;
-        canvas.style.zIndex = "-1";
-        canvas.style.pointerEvents = "none";
-    }
-
-    setCanvasSize();
+  setCanvasSize();
+  console.log('Canvas created');
+  console.log('Canvas size:', canvas.width, canvas.height);
 
     class Particle {
         constructor(x, y, effect) {
@@ -138,6 +136,4 @@ export function initParticleBackground() {
     }
 
     animate();
-});
-  });
-}
+};

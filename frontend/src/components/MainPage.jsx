@@ -8,8 +8,6 @@ import Certificate from "./pages/homepage/Certificates";
 const MainPage = () => {
     return (
         <>
-        
-        
             <Landingpage />
             <Aboutme />
             <Cards />
