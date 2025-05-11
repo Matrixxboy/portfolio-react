@@ -41,13 +41,12 @@ const Landingpage = ()=>{
         {/* <!-- Call to Action Buttons --> */}
         <div className="flex flex-col sm:flex-row justify-center gap-6 pt-8 animate-slide-up delay-500">
             <a href="../certificatepage/Certificatepage.jsx" className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-full font-semibold shadow-lg transition">
-                View My Work
+    View My Work
             </a>
             <a href="https://wa.me/917041634002" target="_blank" className="px-6 py-3 border-2 border-purple-600 text-purple-400 hover:text-white hover:bg-purple-600 rounded-full font-semibold transition">
-                Hire Me
-            </a>
-        </div>
-
+    Hire Me
+    </a>
+</div>
     </div>
 </div>
     );

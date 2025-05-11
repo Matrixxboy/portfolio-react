@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 const Footer =()=>{
     return (
@@ -11,12 +11,13 @@ const Footer =()=>{
                 <div className="lg:col-span-2 text-center lg:text-left">
                     <h2 className="text-3xl font-bold text-white">The Matrix World</h2>
                     <p className="text-lg text-gray-300 mt-1">Grow · Learn · Succeed</p>
+
                     <ul className="mt-4 space-y-2 text-sm flex flex-col lg:items-start items-center">
-                        <li><a href="/" className="hover:underline text-purple-200">Home</a></li>
-                        <li><a href="/about" className="hover:underline text-purple-200">About Me</a></li>
-                        <li><a href="/Projects" className="hover:underline text-purple-200">Projects</a></li>
-                        <li><a href="/Certificates" className="hover:underline text-purple-200">Certificates</a></li>
-                        <li><a href="/Blogs" className="hover:underline text-purple-200">Blogs</a></li>
+                        <li><Link to="/" className="hover:underline text-purple-200">Home</Link></li>
+                        <li><Link to="/about" className="hover:underline text-purple-200">About Me</Link></li>
+                        <li><Link to="/projects" className="hover:underline text-purple-200">Projects</Link></li>
+                        <li><Link to="/certificates" className="hover:underline text-purple-200">Certificates</Link></li>
+                        <li><Link to="/blogs" className="hover:underline text-purple-200">Blogs</Link></li>
                     </ul>
                 </div>
 

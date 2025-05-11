@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Certificatepage = () =>{
+const CertificatePage = () =>{
     return (
         <div className="min-h-screen flex items-center justify-center  text-white">
     <div className="text-center">
@@ -12,4 +12,4 @@ const Certificatepage = () =>{
     );
 }
 
-export default Certificatepage;
+export default CertificatePage;

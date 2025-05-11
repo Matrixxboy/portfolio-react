@@ -2,6 +2,8 @@ import React from "react";
 import { Link }from "react-router-dom"
 import profileImage from "../../../../public/utsav.svg"; // Update this path if needed
 import './landingpage.css'
+
+
 const Aboutme = () => {
   return (
     <div className="container px-4 py-8 md:px-10 md:py-12">
