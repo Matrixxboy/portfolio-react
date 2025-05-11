@@ -1,8 +1,10 @@
 @import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
-
+/* @import 'bootstarp' */
 
 @layer components {
   .glass-dark {
@@ -23,12 +25,5 @@
 
   .githubSVG{
     color: #BBAED0;
-}
-
-  canvas.particle-bg {
-  z-index: -1 !important;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 }

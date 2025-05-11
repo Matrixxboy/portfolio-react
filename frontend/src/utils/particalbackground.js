@@ -1,4 +1,5 @@
 export function initParticleBackground() {
+    console.log("🎉 Particle background initialized");
   document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.createElement('canvas');

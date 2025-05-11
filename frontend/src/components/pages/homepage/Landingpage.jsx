@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import 'bootstrap'
 import './landingpage.css'
 
 const Landingpage = ()=>{
@@ -7,8 +8,6 @@ const Landingpage = ()=>{
         
 <div className="min-h-screen flex items-center justify-center bg-gradient-to-br">
     <div className="w-full text-center  rounded-2xl p-5 animate-fade-in">
-
-        {/* <!-- Typewriter Header --> */}
 
         {/* <!-- Typewriter Header --> */}
         <div className="mx-auto text-center flex justify-center items-center px-4 py-6">

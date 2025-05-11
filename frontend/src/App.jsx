@@ -3,7 +3,7 @@ import { initParticleBackground } from './utils/particalbackground';
 // In your app.js or index.js
 import 'bootstrap/dist/css/bootstrap.min.css';  // This imports Bootstrap's CSS
 import 'bootstrap';  // Your custom JS or other Bootstrap related settings
-import './App.css';  // Your custom app styles
+// import './index.css'; 
 
 import MainPage from './components/MainPage';
 import Header from './components/partials/Navbar';
@@ -19,17 +19,19 @@ function App() {
     <>
     <div className='relative bg-color-primary overflow-x-hidden text-color-secondary'>
     {/*  Background SVG Layer */}
-    <div class="fixed bottom-0 left-0 z-0 w-full h-full  opacity-2 pointer-events-none">
+    <div className="fixed content-center justify-items-center bottom-0 left-0 z-0 w-full h-full  opacity-1 pointer-events-none">
         <img src={MatrixBg}
             alt="Background SVG"
-            class="w-full h-full object-contain filter invert" />
+            className="w-170 object-contain filter invert" />
     </div>
 
     {/* Main Content Layer  */}
-    <div class="relative z-10">
+    <div className="relative z-10">
+        <div className='sticky'>
         <Header />
+        </div>
 
-        <div class="container mx-auto p-4">
+        <div className="container mx-auto p-4">
             <MainPage />
         </div>
 

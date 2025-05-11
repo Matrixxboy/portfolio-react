@@ -1,5 +1,6 @@
 import React from "react";
-import profileImage from "../../../assets/react.svg"; // Update this path if needed
+import { Link }from "react-router-dom"
+import profileImage from "../../../../public/utsav.svg"; // Update this path if needed
 import './landingpage.css'
 const Aboutme = () => {
   return (
