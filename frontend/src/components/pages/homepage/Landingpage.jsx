@@ -9,7 +9,7 @@ const Landingpage = ()=>{
 <div className="min-h-screen flex items-center justify-center bg-gradient-to-br">
     <div className="w-full text-center  rounded-2xl p-5 animate-fade-in">
         <div className="w-full mx-auto text-center flex justify-center items-center px-2 py-4">
-            <h1 className="typewriter break-words font-bold  leading-snug ">
+            <h1 className="typewriter break-words font-extrabold  leading-snug ">
             Dream ~ Code ~ Build
           </h1>
         </div>
