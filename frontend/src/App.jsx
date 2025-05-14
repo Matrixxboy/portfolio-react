@@ -16,6 +16,7 @@ import Projects from './components/pages/projectpage/Projects';
 import CertificatePage from './components/pages/certificatepage/CertificatePage';
 import Blog from './components/pages/blogpage/Blog';
 import ContactForm from './components/pages/conatactform/Contactform'
+import Admin from './components/admin/Admin.jsx';
 
 function App() {
   // useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
               <Route path="/certificates" element={<CertificatePage />} />
               <Route path="/blogs" element={<Blog />} />
               <Route path="/contactme" element={<ContactForm />}/>
+              <Route path="/admin" element={<Admin />}/>
               {/* Optional: Add a 404 route */}
               {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
