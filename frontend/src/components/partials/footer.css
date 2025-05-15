@@ -1,0 +1,16 @@
+.socials {
+    padding-right:0px;
+}
+
+@media ((max-width: 1300px) and (min-width:1024px)) {
+    .socials {
+        padding-right:135px;
+    }
+}
+
+
+@media (min-width:1301px) {
+    .socials {
+        padding-right:70px;
+    }
+}

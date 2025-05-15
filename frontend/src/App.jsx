@@ -16,7 +16,7 @@ import Projects from './components/pages/projectpage/Projects';
 import CertificatePage from './components/pages/certificatepage/CertificatePage';
 import Blog from './components/pages/blogpage/Blog';
 import ContactForm from './components/pages/conatactform/Contactform'
-import Admin from './components/admin/Admin.jsx';
+import Admin from './components/admin/AdminDashboard.jsx';
 
 function App() {
   // useEffect(() => {
@@ -35,8 +35,6 @@ function App() {
             className="w-160 object-contain filter invert"
           />
         </div>
-
-
         {/* Main Content Layer */}
         <div className="relative z-10">
 
