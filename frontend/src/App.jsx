@@ -26,20 +26,20 @@ function App() {
   return (
     <>
       <div className=' bg-color-primary overflow-x-hidden text-color-secondary'>
-          <Header />
+        <Header />
         {/* Background SVG Layer */}
         <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none opacity-2">
-  <img
-    src={MatrixBg}
-    alt="Background SVG"
-    className="w-160 object-contain filter invert"
-  />
-</div>
+          <img
+            src={MatrixBg}
+            alt="Background SVG"
+            className="w-160 object-contain filter invert"
+          />
+        </div>
 
 
         {/* Main Content Layer */}
         <div className="relative z-10">
-          
+
 
           <div className="container mx-auto p-4">
             <ScrollToTop />
@@ -49,8 +49,8 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/certificates" element={<CertificatePage />} />
               <Route path="/blogs" element={<Blog />} />
-              <Route path="/contactme" element={<ContactForm />}/>
-              <Route path="/admin" element={<Admin />}/>
+              <Route path="/contactme" element={<ContactForm />} />
+              <Route path="/admin" element={<Admin />} />
               {/* Optional: Add a 404 route */}
               {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>

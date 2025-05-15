@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom";
 
-const Projects = ()=>{
+const Projects = () => {
     return (
         <div className="min-h-screen flex items-center justify-center  text-white">
             <div className="text-center">

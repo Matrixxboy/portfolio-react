@@ -8,25 +8,30 @@
   .glass-dark {
     @apply bg-white/20 dark:bg-black/30 backdrop-blur-md border border-white/30 dark:border-white/10 shadow-lg;
   }
-  .glass-white{
+
+  .glass-white {
     @apply bg-white/3 backdrop-blur-sm border border-white/3 dark:border-white/3 shadow-lg;
   }
-  .bg-color-primary{
-    background-color:#1A092A;
-  }
-  .text-color-primary{
-    color:#F0E6F6;
-  }
-  .text-color-secondary{
-    color:#BBAED0;
+
+  .bg-color-primary {
+    background-color: #1A092A;
   }
 
-  .githubSVG{
+  .text-color-primary {
+    color: #F0E6F6;
+  }
+
+  .text-color-secondary {
     color: #BBAED0;
-}
+  }
+
+  .githubSVG {
+    color: #BBAED0;
+  }
 }
 
-a ,a:hover{
-    text-decoration:none;
-      color: inherit;
-  }
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
