@@ -10,9 +10,7 @@ const rootElement = document.getElementById('root');
 if (rootElement) {
   createRoot(rootElement).render(
     <StrictMode>
-        <BrowserRouter>
-            <App /> {/* Render the App component here */}
-        </BrowserRouter>
+      <App /> {/* Render the App component here */}
     </StrictMode>
   );
 }

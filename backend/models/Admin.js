@@ -18,6 +18,7 @@ adminSchema.pre('save', async function (next) {
     if (!this.isModified('password')) next();
     const salt = await bcrypt.getSalt(10);
     this.password = await bcrypt.hash(this.password, salt);
+    next();
 })
 
 adminSchema.method.matchPassword = async function (enteredPassword) {
