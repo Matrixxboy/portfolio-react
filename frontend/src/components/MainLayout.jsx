@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
             <Header />
 
             {/* Background SVG Layer */}
-            <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none opacity-2">
+            <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none opacity-4">
                 <img
                     src={MatrixBg}
                     alt="Background SVG"

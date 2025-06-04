@@ -1,11 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
-import MatrixBg from '../public/matrix-bg.svg';
 
-import Header from './components/partials/Navbar';
-import Footer from './components/partials/Footer';
 import ScrollToTop from './components/ScrollToTop.jsx';
 
 import MainLayout from './components/MainLayout.jsx';
@@ -15,11 +12,9 @@ import Projects from './components/pages/projectpage/Projects.jsx';
 import CertificatePage from './components/pages/certificatepage/CertificatePage.jsx';
 import Blog from './components/pages/blogpage/Blog.jsx';
 import ContactForm from './components/pages/conatactform/Contactform.jsx';
+import RedirectToBackend from './components/partials/RedirectToBackend.jsx';
+import AboutWebsite from './components/pages/AboutWebsite/AboutWebsite.jsx';
 
-// ✅ Admin Components
-import AdminLayout from './admin/AdminLayout.jsx';
-import AdminLogin from './admin/AdminLogin.jsx';
-import AdminDashboard from './admin/AdminDashboard.jsx';
 
 function App() {
   return (
@@ -33,13 +28,8 @@ function App() {
         <Route path="/certificates" element={<MainLayout><CertificatePage /></MainLayout>} />
         <Route path="/blogs" element={<MainLayout><Blog /></MainLayout>} />
         <Route path="/contactme" element={<MainLayout><ContactForm /></MainLayout>} />
-
-        {/* ✅ Admin Panel Routes with clean layout */}
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route index element={<AdminLogin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        </Route>
-
+        <Route path='/about-website' element={<MainLayout><AboutWebsite/></MainLayout>}/>
+        <Route path='/admin' element={<Navigate to={<RedirectToBackend />} />}/>
         {/* Optional 404 page */}
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>

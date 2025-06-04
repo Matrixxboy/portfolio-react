@@ -63,11 +63,10 @@ const Aboutme = () => {
                 <span className="font-medium" style={{ color: "#BBAED0" }}> passion for innovation</span>.
               </p>
             </div>
-
             {/* Circles */}
             <div className="relative w-full h-48 md:h-64 lg:h-auto">
-              <div className="absolute  top-15 bottom-0 left-0 w-24 h-24 md:w-32 md:h-32 bg-color-primary rounded-full z-10"></div>
-              <div className="absolute top-7 bottom-0 left-12 w-16 h-16 md:w-20 md:h-20 bg-[#442B59] rounded-full z-20"></div>
+              <div className="absolute  top-15 bottom-0 left-0 w-32 h-32 bg-color-primary rounded-full z-10"></div>
+              <div className="absolute top-7 bottom-0 left-12 w-20 h-20 bg-[#442B59] rounded-full z-20"></div>
             </div>
           </div>
         </div>

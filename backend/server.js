@@ -1,21 +1,63 @@
+require('dotenv').config();
 const express = require('express');
-const dotenv = require('dotenv');
-const connectDB = require('./config/database');
-const adminRoutes = require('./routes/adminRoutes');
-const { errorHandler } = require('./middlewares/errorHandler');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+
 const app = express();
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(express.static('public'));
 
-dotenv.config();
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+const connectDB = require('./config/database');
 connectDB();
+const ADMIN_CREDENTIALS = {
+    username: 'admin',
+    password: 'vermeil123' // hardcoded
+};
 
-app.use(express.json());
+// Middleware: protect dashboard
+function requireAuth(req, res, next) {
+    const token = req.cookies.adminToken;
+    if (token === 'secretToken') return next();
+    res.redirect('/admin/login');
+}
 
-app.use('/api/admin', adminRoutes);
-app.use((req, res, next) => {
-    res.status(404).json({ message: 'Route Not Found' });
+app.get('/', (req, res) => {
+    res.render('admin-default', { error: null });
 });
 
-app.use(errorHandler);
+// Show login page
+app.get('/admin/login', (req, res) => {
+    res.render('admin-login', { error: null });
+});
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port : ${PORT}`));
+// Handle login
+app.post('/admin/login', (req, res) => {
+    const { username, password } = req.body;
+    if (
+        username === ADMIN_CREDENTIALS.username &&
+        password === ADMIN_CREDENTIALS.password
+    ) {
+        res.cookie('adminToken', 'secretToken', { httpOnly: true });
+        return res.redirect('/admin');
+    }
+    res.render('admin-login', { error: 'Invalid credentials' });
+});
+
+// Show dashboard (protected)
+app.get('/admin', requireAuth, (req, res) => {
+    res.render('admin-dashboard');
+});
+
+// Logout
+app.get('/admin/logout', (req, res) => {
+    res.clearCookie('adminToken');
+    res.redirect('/admin/login');
+});
+
+app.listen(5000, () => {
+    console.log('Admin panel running at http://localhost:5000/admin');
+});
