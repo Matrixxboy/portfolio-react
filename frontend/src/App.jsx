@@ -12,9 +12,10 @@ import Projects from './components/pages/projectpage/Projects.jsx';
 import CertificatePage from './components/pages/certificatepage/CertificatePage.jsx';
 import Blog from './components/pages/blogpage/Blog.jsx';
 import ContactForm from './components/pages/conatactform/Contactform.jsx';
-import RedirectToBackend from './components/partials/RedirectToBackend.jsx';
 import AboutWebsite from './components/pages/AboutWebsite/AboutWebsite.jsx';
-
+import AdminLogin from './components/pages/Admin/Adminlogin.jsx';
+import Dashboard from './components/pages/Admin/Dashboard.jsx';
+import ProtectedRoute from './components/pages/Admin/ProtectedRoutes.jsx';
 
 function App() {
   return (
@@ -29,7 +30,17 @@ function App() {
         <Route path="/blogs" element={<MainLayout><Blog /></MainLayout>} />
         <Route path="/contactme" element={<MainLayout><ContactForm /></MainLayout>} />
         <Route path='/about-website' element={<MainLayout><AboutWebsite/></MainLayout>}/>
-        <Route path='/admin' element={<Navigate to={<RedirectToBackend />} />}/>
+        
+        
+        
+        <Route path='/admin' element={<AdminLogin />}/>
+        <Route path='/dashboard' element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+          }/>
+
+
         {/* Optional 404 page */}
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
