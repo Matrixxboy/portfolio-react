@@ -137,11 +137,10 @@ const ExperienceSection = () => {
                             </div>
 
                             <div
-                                className={`overflow-hidden transition-all duration-500 ease-in-out ${expanded === exp.id
-                                    ? "max-h-96 opacity-100 mt-4"
-                                    : "max-h-0 opacity-0"
+                                className={`transition-all duration-500 ease-in-out overflow-hidden ${expanded === exp.id ? "h-auto opacity-100 mt-4" : "h-0 opacity-0"
                                     }`}
                             >
+
                                 <div className="text-sm text-gray-300 space-y-3">
                                     <p>{exp.description}</p>
                                     <div className="flex flex-wrap gap-2 text-xs">

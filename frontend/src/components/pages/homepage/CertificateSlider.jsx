@@ -4,28 +4,28 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const certificates = [
   {
     id: 1,
-    image: "../../../../public/certificates/InoovaterX_page-0001.jpg",
+    image: "https://github.com/Matrixxboy/portfolio-react/blob/main/frontend/public/certificates/InoovaterX_page-0001.jpg?raw=true",
     title: "InnocateX Hackathon winner",
     date: "March 2025",
     description: "We built an AI-powered VS Code Debugger Extension that takes debugging to the next level by not only fixing errors but also explaining cod and adding meaningful comments automatically! 💡⚡",
   },
   {
     id: 2,
-    image: "../../../../public/certificates/DataYB.png",
+    image: "https://github.com/Matrixxboy/portfolio-react/blob/main/frontend/public/certificates/DataYB.png?raw=true",
     title: "GenAI Master Class Participation",
     date: "May 2025",
     description: "Successfully completed the YBAI GenAI Masterclass, gaining foundational knowledge in Generative AI, including large language models (LLMs), prompt engineering, and real-world applications of AI in automation and content generation.",
   },
   {
     id: 3,
-    image: "../../../../public/certificates/DataYB_Internship.png",
-    title: "Machine Learning A-Z",
+    image: "https://github.com/Matrixxboy/portfolio-react/blob/main/frontend/public/certificates/DataYB_Internship.png?raw=true",
+    title: "GenAI Master Internship Program",
     date: "May 2025",
     description: "Completed the YBAI GenAI Master Internship Program, where I gained hands-on experience in Generative AI concepts, including large language models, prompt engineering, and AI-driven project development.",
   },
   {
     id: 4,
-    image: "../../../../public/certificates/HP-ML_page-0001.jpg",
+    image: "https://github.com/Matrixxboy/portfolio-react/blob/main/frontend/public/certificates/HP-ML_page-0001.jpg?raw=true",
     title: "HP AI-ML fundamental",
     date: "June 2023",
     description: "Completed the HP LIFE AI & ML Fundamentals course, gaining a foundational understanding of artificial intelligence and machine learning concepts, including real-world applications and basic model workflows.",
