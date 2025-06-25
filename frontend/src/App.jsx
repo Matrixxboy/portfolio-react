@@ -39,6 +39,7 @@ function App() {
             <Dashboard />
           </ProtectedRoute>
           }/>
+        
 
 
         {/* Optional 404 page */}

@@ -18,6 +18,7 @@ if not MONGODB_URL or not MONGODB_HOST:
 # Connect
 client = AsyncIOMotorClient(MONGODB_URL)
 db = client[MONGODB_HOST]
+print("database connected")
 
 # Collections
 project_collection = db["projects"]
