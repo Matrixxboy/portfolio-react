@@ -1,4 +1,3 @@
-// CertificateSlider.jsx
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
